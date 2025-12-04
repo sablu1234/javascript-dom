@@ -1,1 +1,2 @@
+# amara jodi kono div/call ar modhe kono element dhorta chai tabe "querySelector" use korte pari
 document.querySelector('.elementor-icon-box-content > p')
