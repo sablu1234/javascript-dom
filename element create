@@ -2,3 +2,34 @@
 
 let olElement = document.createElement('ol');
 document.body.appendChild(olElement);
+
+//amrajodi spacific jiniser age pore create korte chai 
+document.body.insertBefore(olElement, h1Element);
+
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="intro-text">Manipulating the dom</h1>
+
+
+    <script>
+
+        let h1Element = document.getElementById('intro-text');
+        let scriptElement = document.querySelector('script');
+
+        let olElement = document.createElement('ol');
+
+
+        document.body.insertBefore(olElement, h1Element);
+    </script>
+    
+</body>
+</html>
