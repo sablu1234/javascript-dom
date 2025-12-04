@@ -1,2 +1,2 @@
-# amara jodi kono div/call ar modhe kono element dhorta chai tabe "querySelector" use korte pari
+# amara jodi kono div/call ar modhe kono element dhorta chai tabe "querySelector" use korte pari class use korle obossoi(.) use korben
 document.querySelector('.elementor-icon-box-content > p')
