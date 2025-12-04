@@ -9,3 +9,10 @@ const titles = document.querySelector(".elementor-image-box-content>h3");
 titles.forEach(title =>{
     title.innerText = 'hi hasan';
 });
+
+
+#for loop use koreo kora jabe
+const titles = document.querySelectorAll(".elementor-image-box-content > h3");
+for (let i = 0; i < titles.length; i++) {
+  titles[i].innerText = "New Title";
+}
