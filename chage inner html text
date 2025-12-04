@@ -2,3 +2,10 @@
 
 const title = document.querySelector(".elementor-image-box-content>h3");
 title.innerText = "New Title";
+
+
+#jodi akdhik item thake sobgulo change korte chai
+const titles = document.querySelector(".elementor-image-box-content>h3");
+titles.forEach(title =>{
+    title.innerText = 'hi hasan';
+});
