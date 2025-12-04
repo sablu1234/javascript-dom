@@ -1,0 +1,4 @@
+#amara jodi kono element or text change korte chai dom diye frist oita dhore "innerText" ata diye change korbo
+
+const title = document.querySelector(".elementor-image-box-content>h3");
+title.innerText = "New Title";
