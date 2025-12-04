@@ -1,0 +1,4 @@
+£amara jodi kono element create korte chai tobe "createElement" ata use korte pari
+
+let olElement = document.createElement('ol');
+document.body.appendChild(olElement);
