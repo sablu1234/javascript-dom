@@ -1,0 +1,9 @@
+1. domain  name 
+  console.log(document.domain)
+2. Jodi full head chai atao akta object console.log(typeof(document.head))//object
+  console.log(document.head)
+3. full html body chaile 
+  console.log(document.body)
+4. amra chaile object ar property value change korte pari
+  document.title = 'play with dom';
+5.
