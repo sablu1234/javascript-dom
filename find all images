@@ -1,0 +1,2 @@
+#amara jodi page ar all images ber korte chai👇
+console.log(document.images)
