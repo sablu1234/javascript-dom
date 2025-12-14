@@ -1,6 +1,11 @@
 #amara jodi page ar all images ber korte chai👇
 console.log(document.images)
 
+#use for all iamge link 
+const images = document.images;
+for (let img of images) {
+  console.log(img.src);
+}
 
 #Jodi all image url lage niser code copy koro
 [...document.querySelectorAll('img')].map(img => img.src || img.getAttribute('data-src'));
