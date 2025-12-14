@@ -1,2 +1,9 @@
 #amara jodi page ar all images ber korte chai👇
 console.log(document.images)
+
+
+#Jodi all image url lage niser code copy koro
+const images = document.images;
+for (let img of images) {
+  console.log(img.src);
+}
