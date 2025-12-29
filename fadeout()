@@ -1,0 +1,21 @@
+#amara jodi kono button a click kore kisu hide korte chai 
+<h1>Jquery fadein and fadeout method</h1>
+<div id="box" style="padding:20px;  border:1px solid black; background:red;">
+  <h2>Test box</h2>
+  <p>loremum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+  
+  <br>
+   <button id="fadeOutBtn">fadeOut</button>
+   <button id="fadeInBtn">fadeIn</button>
+   <button id="fadeToggleBtn">fadeToggle</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+<script>
+ $(document).ready(function(){
+   $('#fadeOutBtn').click(function(){
+     $('#box').fadeOut("slow")
+   })
+ });
+</script>
