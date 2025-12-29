@@ -16,17 +16,23 @@
  $(document).ready(function(){
    
    $("#slideUpBtn").click(function(){
-     $("#box").slideUp();
+     $("#box").slideUp(2000, function(){
+       console.log("Now it is hidden");
+     });
    });
    
    
    $("#slideDownBtn").click(function(){
-     $("#box").slideDown();
+     $("#box").slideDown(2000, function(){
+       console.log("Now it is show");
+     });
    });
    
    
    $("#slideToggleBtn").click(function(){
-     $("#box").slideToggle();
+     $("#box").slideToggle( 2000, function(){
+       console.log("Now it is show");
+     });
    });
    
  });
