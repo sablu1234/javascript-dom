@@ -17,6 +17,8 @@
 <script>
  $(document).ready(function(){
    
+   $("#box").hide();
+   
    $("#slideUpBtn").click(function(){
      $("#box").slideUp(2000, function(){
        console.log("Now it is hidden");
