@@ -1,4 +1,4 @@
-#fadeout kono event hole hide hobe kisu, "fadeIn" kono event hole kono kisu show korbe, "fadeToggle" kono event hole hide and show dutoi hobe ak button a
+#fadeout kono event hole hide hobe kisu, "fadeIn" kono event hole kono kisu show korbe, "fadeToggle" kono event hole hide and show dutoi hobe ak button a( source => "https://www.youtube.com/watch?v=9iXs1NOOLxw")
 <h1>Jquery fadein and fadeout method</h1>
 <div id="box" style="padding:20px;  border:1px solid black; background:red;">
   <h2>Test box</h2>
