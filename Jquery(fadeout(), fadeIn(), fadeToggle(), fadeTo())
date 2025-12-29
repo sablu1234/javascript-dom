@@ -1,4 +1,4 @@
-#fadeout kono event hole hide hobe kisu, "fadeIn" kono event hole kono kisu show korbe, "fadeToggle" kono event hole hide and show dutoi hobe ak button a( source => "https://www.youtube.com/watch?v=9iXs1NOOLxw")
+#fadeout kono event hole hide hobe kisu, "fadeIn" kono event hole kono kisu show korbe, "fadeToggle" kono event hole hide and show dutoi hobe ak button a, "fadeTo()" ata use kora hoi kono kisur opacity komate( source => "https://www.youtube.com/watch?v=9iXs1NOOLxw")
 <h1>Jquery fadein and fadeout method</h1>
 <div id="box" style="padding:20px;  border:1px solid black; background:red;">
   <h2>Test box</h2>
@@ -9,6 +9,7 @@
    <button id="fadeOutBtn">fadeOut</button>
    <button id="fadeInBtn">fadeIn</button>
    <button id="fadeToggleBtn">fadeToggle</button>
+   <button id="fadeToBtn">fadeTo</button>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   
@@ -28,6 +29,12 @@
    
    $('#fadeToggleBtn').click(function(){
      $('#box').fadeToggle(3000, function(){
+       console.log("Now its show");
+     })
+   })
+   
+   $('#fadeToBtn').click(function(){
+     $('#box').fadeTo(2000, 0.5,function(){
        console.log("Now its show");
      })
    })
