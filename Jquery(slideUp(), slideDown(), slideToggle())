@@ -31,7 +31,7 @@
    
    $("#slideToggleBtn").click(function(){
      $("#box").slideToggle( 2000, function(){
-       console.log("Now it is show");
+       console.log("Hey Toggle Slide");
      });
    });
    
