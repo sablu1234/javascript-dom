@@ -1,4 +1,4 @@
-#amara jodi kono button a click kore kisu hide korte chai 
+#fadeout kono event hole hide hobe kisu, "fadeIn" kono event hole kono kisu show korbe, "fadeToggle" kono event hole hide and show dutoi hobe ak button a
 <h1>Jquery fadein and fadeout method</h1>
 <div id="box" style="padding:20px;  border:1px solid black; background:red;">
   <h2>Test box</h2>
@@ -15,7 +15,22 @@
 <script>
  $(document).ready(function(){
    $('#fadeOutBtn').click(function(){
-     $('#box').fadeOut("slow")
+     $('#box').fadeOut(3000, function(){
+       console.log("Now its hidden");
+     })
    })
+   
+   $('#fadeInBtn').click(function(){
+     $('#box').fadeIn(3000, function(){
+       console.log("Now its show");
+     })
+   })
+   
+   $('#fadeToggleBtn').click(function(){
+     $('#box').fadeToggle(3000, function(){
+       console.log("Now its show");
+     })
+   })
+   
  });
 </script>
