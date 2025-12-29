@@ -1,4 +1,6 @@
 #"slideUp" amra jodi kono kisu hide korte chai, "slideDown" amra jodi kono kisu hide theke show korte chai, "slideToggle" amra ata dara hide and show dutoi korte parbo (source => https://www.youtube.com/watch?v=FzqGLUQ30vQ )
+#amara joid default box hide rakte chai ( $("#box").hide();) ata use korte pari
+
 <h1>Jquery fadein and fadeout method</h1>
 <div id="box" style="padding:20px;  border:1px solid black; background:red;">
   <h2>Test box</h2>
