@@ -53,3 +53,43 @@ for (let index = 0; index < list.length; index++) {
 
 document.getElementById("list").innerHTML = html;
 document.getElementById("cost").innerHTML = `$ ${total}`;
+
+
+
+#amra while loop diyeo korte pari for loop use na kore 
+#html code(basics.html)
+<body>
+    <h2>Shoping list <span id="cost"></span></h2>
+
+    <ul id="list">
+        https://github.com/sablu1234/javascript-dom/tree/main/object%20array%20output%20in%20html%20(using%20for%20loop
+    </ul>
+
+<script src="./basics.js"></script>
+</body>
+
+#js code(basics.js)
+let list = [
+    { text: 'milk', cost: 4, need: false },
+    { text: 'eggs', cost: 10, need: true },
+    { text: 'butter', cost: 5, need: false },
+    { text: 'bread', cost: 3, need: true },
+    { text: 'bacon', cost: 12, need: true },
+];
+
+let html = '';
+let total = 0;
+
+index = 0;
+item = list[index];
+while (item) {
+    if (item.need) {
+        html += `<li>${item.text}</li>`;
+        total += item.cost;
+    }
+
+    item = list[index++];
+}
+
+document.getElementById("list").innerHTML = html;
+document.getElementById("cost").innerHTML = `$ ${total}`;
