@@ -1,0 +1,28 @@
+#amra jodi array ar value html code diye preview korate chai (source => https://www.youtube.com/watch?v=cDCzz8vJf3Y&t=989s)
+
+#html code(basics.html)
+<body>
+    <h2>Shoping list</h2>
+
+    <ul id="list">
+        
+    </ul>
+
+<script src="./basics.js"></script>
+</body>
+========================================================================================
+#js code(basics.js)
+let list = [
+    "milk",
+    "eggs",
+    "butter",
+    "bread",
+    "bacon"
+];
+
+let html = '';
+for (let index = 0; index < list.length; index++) {
+    html += `<li>${list[index]}</li>`;
+}
+
+document.getElementById("list").innerHTML = html;
