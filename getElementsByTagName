@@ -1,2 +1,2 @@
-#amara jodi tabname diye kono kisu dhorte chai js dom a
+#amara jodi tagname diye kono kisu dhorte chai js dom a
 document.getElementsByTagName("li");
