@@ -1,0 +1,2 @@
+#amara jodi tabname diye kono kisu dhorte chai js dom a
+document.getElementsByTagName("li");
