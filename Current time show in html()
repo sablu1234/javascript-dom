@@ -1,0 +1,15 @@
+#amra jodi current time show korte chai wordpress a.heding widget nibo id "text" and niser js use korte hobe (source code pen=> https://codepen.io/Sablu-Hasan-the-lessful/pen/zxBrwdJ)
+  <p id="text"></p>
+
+
+#js code
+
+  function updateTime() {
+    const now = new Date();
+    const currentTime = now.toLocaleTimeString();
+    document.getElementById("text").innerText = currentTime;
+  }
+
+  updateTime();              // first load
+  setInterval(updateTime, 1000); // update every second
+
