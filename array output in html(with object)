@@ -76,3 +76,18 @@ for (const item of list) {
 }
 
 document.getElementById("list").innerHTML = html;
+
+
+#arrar ar modhe theke jodi object ar direct valu chai index diye 
+
+<ul id="list"></ul>
+
+const list = [
+  "sablu", 
+  {name: "ali",roll: 5},
+  "hasan"]; // strings
+
+let html= '';
+html += `<li>${list[1].roll}</li>`;
+
+document.getElementById("list").innerHTML = html;
