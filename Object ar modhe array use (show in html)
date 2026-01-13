@@ -28,3 +28,43 @@ person.friends.forEach(friend => {
 html += `</ul>`;
 
 document.getElementById("list").innerHTML = html;
+
+
+#easy way to array valu ber korar from object==========================================
+const person = {
+    name: "Hasan",
+    age: 20,
+    hobbies: ["reading", "coding", "gaming"],
+    friends: [
+        { name: "Ali", age: 21 },
+        { name: "Sara", age: 19 }
+    ]
+};
+
+let html = '';
+
+// Normal properties
+person.friends.forEach(friend => {
+   html += `<li>${friend.name}</li>`;
+})
+document.getElementById("list").innerHTML = html;
+
+
+
+#amara jodi object theke je array value ase tar theke index diye value dekte chai use this 
+const person = {
+    name: "Hasan",
+    age: 20,
+    hobbies: ["reading", "coding", "gaming"],
+    friends: [
+        { name: "Ali", age: 21 },
+        { name: "Sara", age: 19 }
+    ]
+};
+
+let html = '';
+
+// Normal properties
+ html += `${person.friends[0].name}`;
+document.getElementById("list").innerHTML = html;
+
