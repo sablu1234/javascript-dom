@@ -26,3 +26,53 @@ for (let index = 0; index < list.length; index++) {
 }
 
 document.getElementById("list").innerHTML = html;
+
+
+#easy way another===========================================================
+
+<body>
+    <h2>Shoping list</h2>
+
+    <ul id="list">
+        
+    </ul>
+
+<script src="./basics.js"></script>
+</body>
+
+let list = [
+    "milk",
+    "eggs",
+    "butter",
+    "bread",
+    "bacon"
+];
+
+let html = '';
+for (const key in list) {
+    html += `<li>${list[key]}</li>`;
+}
+
+document.getElementById("list").innerHTML = html;
+
+
+#jodi array ar modhe object thake tobe amre conditon use kore korte pari 
+let list = [
+    "milk",
+    "eggs",
+    "butter",
+    "bread",
+    "bacon",
+    {name:"ali", age:12}
+];
+
+let html = '';
+for (const item of list) {
+    if (typeof item === 'object') {
+        html += `<li>Name: ${item.name}, Age: ${item.age}</li>`;
+    } else {
+        html += `<li>${item}</li>`;
+    }
+}
+
+document.getElementById("list").innerHTML = html;
