@@ -1,0 +1,30 @@
+#object ar modhe jodi array use korte chai 
+<ul id="list"></ul>
+
+const person = {
+    name: "Hasan",
+    age: 20,
+    hobbies: ["reading", "coding", "gaming"],
+    friends: [
+        { name: "Ali", age: 21 },
+        { name: "Sara", age: 19 }
+    ]
+};
+
+let html = '';
+
+// Normal properties
+html += `<li>Name: ${person.name}</li>`;
+html += `<li>Age: ${person.age}</li>`;
+
+// Array property
+html += `<li>Hobbies: ${person.hobbies.join(", ")}</li>`;
+
+// Array of objects
+html += `<li>Friends:</li><ul>`;
+person.friends.forEach(friend => {
+    html += `<li>${friend.name} - ${friend.age} years</li>`;
+});
+html += `</ul>`;
+
+document.getElementById("list").innerHTML = html;
