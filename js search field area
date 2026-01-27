@@ -1,0 +1,20 @@
+#amra jodi js diye search field banate chai
+<input type="text" id="search" placeholder="Search..." oninput="filterList()">
+
+<ul id="myList">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Orange</li>
+  <li>Mango</li>
+</ul>
+
+#js
+function filterList() {
+  const searchValue = document.getElementById("search").value.toLowerCase();
+  const listItems = document.querySelectorAll("#myList li");
+
+  listItems.forEach(li => {
+    const text = li.textContent.toLowerCase();
+    li.style.display = text.includes(searchValue) ? "list-item" : "none";
+  });
+}
