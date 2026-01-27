@@ -1,0 +1,8 @@
+#amra jodi input ar upor data value nite chai 
+<input type="text" id="my_input" oninput="myInputData()">
+
+#js
+function myInputData() {
+  const value = document.getElementById("my_input").value;
+  console.log(value);
+}
