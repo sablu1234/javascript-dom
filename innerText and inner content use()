@@ -1,0 +1,10 @@
+#amara jodi kono spacific tag or element ar vetorer  text dekta chia tobe innerText and textContent use korte pari
+#innerText
+<h1>welcome to day 18</h1>
+<p>Hope you are engjoin of 40 days of javascript</p>
+<div>
+  <h2 style="display:none;">test</h2>
+</div>
+const divElem = document.querySelector("div");
+console.log('Inner text',divElem.innerText);//"Inner text" ""
+console.log('Text Content',divElem.textContent);//"Text Content" "  test"
