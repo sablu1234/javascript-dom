@@ -1,0 +1,50 @@
+#amra jodi parent theke kono child remove korte chai
+<ul id="myList">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>  
+</ul>
+
+
+const list = document.querySelector("#myList");
+const itemToRemove = list.children[0];
+list.removeChild(itemToRemove)
+console.log(list.children);
+
+#amra jodi kono element delete korte chai =======================================================
+<div id="removeMe">I am going to be removed</div>
+
+#js code use korlei ai element delete hoye jabe
+document.querySelector("#removeMe").remove();
+
+#amra aita use koreo kono kisu remove korte pari
+<ul id="myList">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>  
+</ul>
+#js code
+const list = document.querySelector("#myList");
+list.innerText = ""; 
+list.list.textContent = "";
+#ata use koreo remove kora jai 
+list.replaceChildren();
+
+
+#amra  replaceChildren() ata diye child element chnage korte pari variable diye
+<h1>welcome to day 18</h1>
+  <ul id="myList">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>  
+</ul>
+  
+const list = document.querySelector("#myList");
+const h1Elem = document.querySelector("h1")
+list.replaceChildren(h1Elem);
