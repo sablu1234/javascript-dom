@@ -1,0 +1,21 @@
+#amara jodi kono kisu replce korte chai 
+<h1>Welcome to day 18</h1>
+<p>Hope you are enjoying of 40 days of JavaScript!</p>
+<ul id="mylist">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+</ul>
+#ata dile replce hoye empty hobe element
+const list = document.getElementById("mylist");
+list.replaceChildren("");
+
+#amra jodi chai kono element diye replce korte runtime page ar tobe je element diye replaceChildren "replaceChildren()" hobe oi element jekhane silo oikhan theke remove hoye
+jekhane add kora hosse sekhane add hobe(amra chale akadhik elemt akoi somoi a receve korte pari)
+const pElem =document.querySelector("p");
+const h1Elem =document.querySelector("h1");
+
+const list = document.getElementById("mylist");
+list.replaceChildren(pElem,h1Elem);
