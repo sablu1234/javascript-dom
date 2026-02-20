@@ -15,6 +15,8 @@ console.log(list.children);
 
 #amra jodi kono element delete korte chai =======================================================
 <div id="removeMe">I am going to be removed</div>
+document.getElementById('removeMe').remove();
+
 
 #js code use korlei ai element delete hoye jabe
 document.querySelector("#removeMe").remove();
