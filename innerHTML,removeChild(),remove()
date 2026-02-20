@@ -1,0 +1,26 @@
+#amra jodi kono element ar modhe html soho content dite chai dynamic
+const pElem = document.querySelector('p');
+pElem.innerHTML = "<u>Hello how</u> are you doing?";
+
+#amara jodi kono element delete korte chai 
+<div id="removeMe">I am going to be removed</div>
+document.getElementById('removeMe').remove();
+
+#amara jodi kono child remove korte chai
+ const list = document.getElementById("mylist");
+  itemToRemove = list.children[0];
+  list.removeChild(itemToRemove);
+
+#amara ai vabeo all remove korte pari
+ <ul id="mylist">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+</ul>
+list.innerText = "";
+#ata diye kora jabe
+list.textContent = "";
+
+
