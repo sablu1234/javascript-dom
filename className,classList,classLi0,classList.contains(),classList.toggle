@@ -12,7 +12,7 @@ Manipulating classes
 const mainDivElem = document.getElementById('main-id');
 console.log(mainDivElem.className);
 
-#amra jodi className change korte chai(tobe ata class namejodi akadhik o thake all name new class name diye replce hobe)
+#amra jodi className change korte chai(tobe ata class namejodi akadhik o thake all name new class name diye replce hobe)(className)
 mainDivElem.className = "secondary-class";
 
 #amra jodi replce na kore new className add korte chai tobe(classList.add)
@@ -24,7 +24,7 @@ mainDivElem.classList.remove('layout');
 #amra jodi chai spacific class replce hobe new class diye (classList.replace())
 mainDivElem.classList.replace('main-class', 'secondary-class');
 
-#amra jodi dekte chai spacific class element ase kina 
+#amra jodi dekte chai spacific class element ase kina (classList.contains)
 console.log("Does it have test?", mainDivElem.classList.contains('test'));
 
 #amra jodi chai le toggole use korte pari ata deke jodi mention class thake tobe remove kore ar na thakle add kore(classList.toggle)
