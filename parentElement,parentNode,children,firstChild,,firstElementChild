@@ -1,0 +1,34 @@
+Travarsing/Navigating the DOM=====
+#amra jodi kono element ar parent dhorte chia tobe ar jekono akta use korte pari (parentElement,parentNode)
+<div id="main-id">
+    <p class="info">
+        <span id="text">I love Dom</span>
+    </p>
+</div>
+
+#amra jodi kono element ar parent dhorte chai tobe
+const span = document.getElementById("text");
+console.log("Parent Element", span.parentElement);
+
+#amra jodi patentNode diye dhorte chai 
+console.log("Parent Node", span.parentNode);
+
+#amra jodi ai duita diyei traversing kore parent ar  parent dhorte pari(parentElement,parentNode)
+console.log("Parent Element", span.parentElement.parentElement);
+console.log("Parent Node", span.parentNode.parentNode);
+
+#amra jodi amar parent theke element dhorte chai to be ata use korte pari(children) but ata html collection dei ar alter native amra (childNodes)ata use korte pari jeta node dei mane children ar array dek 
+ja foreach a sorasori use kora jabe
+const div = document.getElementById("main-id");
+console.log("children", div.children);
+
+#amra jodi array node chai tobe ata best(ata comment thakle comment o dibe)
+console.log("childNodes", div.childNodes);
+
+
+#amra jodi frist child chai ata(jodi child a break thake oitao count korbe)
+const main = document.getElementById("main-id");
+console.log('Frist child', main.firstChild);
+
+#amra jodi frist child element chai ata (break ke skip korbe)
+console.log('Frist Child Element', main.firstElementChild);
