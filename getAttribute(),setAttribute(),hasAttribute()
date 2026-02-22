@@ -1,0 +1,19 @@
+#amra jodi kono atrribute get korte chai tobe
+<img src="/javascript-tapa/Day18/imagesss.jpg" alt="some image" height="200px" width="200px">
+
+const imageElem = document.querySelector('img');
+console.log(imageElem.getAttribute('src'));
+console.log(imageElem.getAttribute('alt'));
+
+#amra jodi kono attribute set korte chai 
+const imageElem = document.querySelector('img');
+imageElem.setAttribute("src", "image.jpg");
+
+#amra jodi alt attribute set korte chai 
+imageElem.setAttribute("alt", "Banner image");
+
+#amra jodi kono attribute remove korte chai 
+imageElem.removeAttribute('height');
+
+#amra jodi dekte chai kono attribute ase kina 
+console.log(imageElem.hasAttribute('alt'));//true
