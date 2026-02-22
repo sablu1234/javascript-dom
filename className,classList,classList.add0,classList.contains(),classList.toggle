@@ -15,7 +15,7 @@ console.log(mainDivElem.className);
 #amra jodi className change korte chai(tobe ata class namejodi akadhik o thake all name new class name diye replce hobe)(className)
 mainDivElem.className = "secondary-class";
 
-#amra jodi replce na kore new className add korte chai tobe(classList.add)
+#amra jodi replce na kore new className add korte chai tobe(classList.add())
 mainDivElem.classList.add('test');
 
 #amra jodi nirdisto kono class remove korte chai 
