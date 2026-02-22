@@ -1,0 +1,5 @@
+#amra jodi dom diye style change korte chai 
+<p id="p-id" style="background-color: green; color: #fff; ">Let's do some style</p>
+const pElem = document.getElementById('p-id');
+console.log(pElem.style);
+pElem.style.backgroundColor = "pink";
