@@ -1,0 +1,6 @@
+#amra jodi chai onclick a kono funciton run hove
+<button onclick="toggleInfo()" class="action" id="toggleButton">Show/Hide Paragraph</button>
+
+function toggleInfo(){
+    console.log('toggle');
+}
