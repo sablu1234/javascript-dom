@@ -3,7 +3,8 @@
 #element create korte niser code
 let olElement = document.createElement('ol');
 
-#element show korte appendChild() at use korte hobe
+#appendChild() হলো JavaScript এর একটি DOM method, যেটা দিয়ে তুমি কোনো নতুন element বা node কে অন্য একটি parent element
+এর ভিতরে শেষে (last child হিসেবে) যোগ করতে পারো।
 document.body.appendChild(olElement);
 
 //amrajodi spacific jiniser age pore create korte chai 
