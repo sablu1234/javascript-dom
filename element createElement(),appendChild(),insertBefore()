@@ -1,6 +1,9 @@
 £amara jodi kono element create korte chai tobe "createElement" ata use korte pari
 
+#element create korte niser code
 let olElement = document.createElement('ol');
+
+#element show korte appendChild() at use korte hobe
 document.body.appendChild(olElement);
 
 //amrajodi spacific jiniser age pore create korte chai 
