@@ -6,3 +6,10 @@ function myInputData() {
   const value = document.getElementById("my_input").value;
   console.log(value);
 }
+
+#amra ai vabeo likte pari
+function myInputData() {
+  const my_input = document.getElementById("my_input");
+   const value = my_input.value;
+  console.log(value);
+}
