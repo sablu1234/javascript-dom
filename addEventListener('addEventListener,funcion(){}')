@@ -1,0 +1,11 @@
+#amra jodi chai dom content loaded hoyar por function run hobe
+
+//will never run(ai vabe deya jabe na niser code kaj korbe)
+document.onDOMContentLoaded = function(){
+    console.log("Dom Xontent Loaded...");
+}
+
+// this will run==============================================
+document.addEventListener('DOMContentLoaded', function(){
+    console.log("Dom Content Loaded...");
+});
