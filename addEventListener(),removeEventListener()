@@ -1,0 +1,25 @@
+#amra jodi kono button a addEventListener add korte chai (tobe anonymous funciton na use kora valo karon jodi amra event remove korte chai tobe seta hobe na)
+<button id="countBtn">Count++</button>
+
+const countBtnElem = document.getElementById('countBtn');
+let counter= 0;
+countBtnElem.addEventListener('click', function(){
+    console.log("Counter", counter);
+    counter++;
+})
+
+
+
+#amra prefer korbo addeventListener add korte baire funciton create kore add kore dite jate pore amra sohoje addEventListener remove korte pari
+<button id="countBtn">Count++</button>
+
+const countBtnElem = document.getElementById('countBtn');
+let counter= 0;
+const hadleCount = function(){
+    console.log("Counter", counter);
+    counter++;
+}
+countBtnElem.addEventListener('click', hadleCount)
+
+#remove removeEventListener=================================================
+countBtnElem.removeEventListener('click',hadleCount);
