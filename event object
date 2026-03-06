@@ -1,4 +1,4 @@
-#amra jodi event object dekte chai 
+//amra jodi event object dekte chai 
 <input type="text" name="search" id="search-id" placeholder="search...">
 
 function handleChange (event){
