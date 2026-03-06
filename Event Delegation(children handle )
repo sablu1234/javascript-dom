@@ -1,0 +1,11 @@
+//amra jodi parent elemetn a event listener add kore ar child ke handle korte chai tobe ata use kora jabe (Event Delegation)
+<ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+document.getElementById("itemList").addEventListener("click", (event)=>{
+    if(event.target.tagName == "LI"){
+        console.log(`You clicked on ${event.target.textContent}`);
+    }
+})
