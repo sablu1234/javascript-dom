@@ -1,0 +1,17 @@
+//amra onek somoi chaite pari je ami je target element a event hobe tar uprerer parent a jodi event thake tader event hobena(like bubbles uporer event hobe na )
+tokhon amra stopPropagation() ata use korte pari
+
+<div id="father" style="padding: 30px; background: #cfd8dc;">
+      Parent
+      <button id="son" style="margin: 10px;">Click Me</button>
+  </div>
+
+document.getElementById("father").addEventListener("click",()=>{
+    console.log("Parent Clicked");
+});
+
+//ai event hobe ar ager parent event ta button a click korle bubble hove  na(but jodi button a bahire click kori tobe parent event kaj korbe)
+document.getElementById("son").addEventListener("click",(e)=>{
+    e.stopPropagation();
+    console.log("Child Clicked");
+});
