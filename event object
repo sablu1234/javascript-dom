@@ -1,0 +1,19 @@
+#amra jodi event object dekte chai 
+<input type="text" name="search" id="search-id" placeholder="search...">
+
+function handleChange (event){
+    console.log(event);
+
+    console.log("Target: ",event.target);
+    console.log("Target Name: ",event.target.name);
+    console.log("Target Value: ",event.target.value);
+    console.log("Event Type: ",event.type);
+    console.log("Current Target: ",event.currentTarget);
+
+    //this addevent listener a this element ke focus kore==========
+    console.log(this);
+}
+
+const searchElem = document.getElementById('search-id');
+
+searchElem.addEventListener('change', handleChange);
