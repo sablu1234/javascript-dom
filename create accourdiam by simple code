@@ -1,0 +1,60 @@
+#amra jodi accourdiam create korte chai (faq) ai class amar main div (e.target.parentElement) ata amader main je element thakbe tar je item a select kora hobe take dhorbe
+amra normally (answer) ai element display none kore raksi. akhon amra jodi chai div ar baire click korele accoudiam collaps hobe. tai amra (document.querySelectorAll('.answer.show');)
+ata diye all "answer" select korsi jar class "'answer' and 'show' ase". but atar jonno show class add hoye sathe sathe remove hosse bole kono affect deka jabe na tai
+amra ai condition dissi (e.target.classList.contains("question")) jodi question a click hoi tobei ata cholbe. ar question a click korle "dom bubble off" hobe.(e.stopPropagation();)
+
+<div class="faq">
+    <div class="faq-item">
+        <div class="question">What is javascript</div>
+        <div class="answer">Javascript is a scripting language used to create dynamic content</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What is javascript</div>
+        <div class="answer">Javascript is a scripting language used to create dynamic content</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What is javascript</div>
+        <div class="answer">Javascript is a scripting language used to create dynamic content</div>
+    </div>
+</div>
+
+#css=========================================
+.faq-item {
+    background: red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.question, .answer {
+    background: #0000002b;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.answer {
+    display: none;
+}
+
+.answer.show{
+    display: block;
+}
+
+
+#js code==========================================
+
+const faq = document.querySelector(".faq");
+faq.addEventListener('click', function(e){
+    if(e.target.classList.contains("question")){
+        e.stopPropagation();
+        const CurrentItem = e.target.parentElement;
+        const CurrentAnswer = CurrentItem.querySelector(".answer");
+        CurrentAnswer.classList.toggle('show');
+    }
+});
+
+document.addEventListener('click', function(){
+    const allAnswers = document.querySelectorAll('.answer.show');
+    allAnswers.forEach(answer => answer.classList.remove('show'));
+});
+ 
