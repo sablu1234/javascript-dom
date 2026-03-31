@@ -1,0 +1,13 @@
+#amra jodi akta design create kore bar bar use korte chai tobe template use korte pari (akhane clone use kore tempate use koresi tmi alda kisu diye arekta card create korte parbe)
+<template id="card-template">
+    <div class="card">
+    <h2 class="title"></h2>
+    <p class="desc"></p>
+    </div>
+</template>
+
+const template = document.getElementById("card-template");;
+const clone = template.content.cloneNode(true);
+clone.querySelector(".title").textContent = "Dom Advance Topic";
+clone.querySelector(".desc").textContent = "Hope your are learning something new";
+document.body.appendChild(clone);
