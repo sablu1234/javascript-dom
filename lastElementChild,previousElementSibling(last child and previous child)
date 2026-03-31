@@ -1,0 +1,16 @@
+#amra jodi parent element ar last child dhorte chai
+<div class="card">
+    <div></div>
+    <div>fdsa</div>
+</div>
+
+const parent = document.querySelector(".card");
+const lastChild = parent.lastElementChild;
+console.log(lastChild);
+
+#amra jodi last child ar previou Element chai 
+const parent = document.querySelector(".card");
+
+const lastChild = parent.lastElementChild;
+const prev = lastChild.previousElementSibling;
+console.log(prev);
