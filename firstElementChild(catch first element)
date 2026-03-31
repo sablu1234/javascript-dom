@@ -1,0 +1,9 @@
+#amra jodi parent div theke firstChild dhorte chai
+<div class="card">
+    <div></div>
+    <div></div>
+</div>
+
+const parent = document.querySelector(".card");
+const firstChild = parent.firstElementChild;
+console.log(firstChild);
