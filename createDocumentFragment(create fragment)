@@ -1,0 +1,10 @@
+#amra jodi kono fratement create kore and later time a use korte cha tobe fragment use korte pari
+<ul id="list"></ul>
+
+const fragment = document.createDocumentFragment();
+for(let i = 0; i<=3; i++){
+    const li = document.createElement("li");
+    li.textContent = `Item ${i}`;
+    fragment.appendChild(li);
+}
+document.getElementById("list").appendChild(fragment);
