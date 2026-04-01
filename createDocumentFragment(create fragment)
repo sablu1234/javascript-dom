@@ -1,4 +1,4 @@
-#amra jodi kono fratement create kore and later time a use korte cha tobe fragment use korte pari
+#amra jodi template ar moto kono kisu create korte chai but html ar modhe rakte chai na but pore use korbo tahole fragment use korte pari
 <ul id="list"></ul>
 
 const fragment = document.createDocumentFragment();
