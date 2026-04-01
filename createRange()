@@ -1,0 +1,9 @@
+#amra jodi akta spacific element ar nirdistio "content" select korte chai tobe "range" use korte pari
+<p id="para">Hello <strong>world</strong> and universe!</p>
+
+const p = document.getElementById("para");
+const range = document.createRange();
+range.setStart(p.firstChild,6);//After "Hello "
+range.setEnd(p.childNodes[2], 4);
+const content = range.cloneContents();
+console.log(content);
