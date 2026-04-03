@@ -1,0 +1,6 @@
+#amara jodi amon kisu banate chai ja upore normal bairer css ar kono affect porbe na abr ...ar css ar effect bairer dom tree te porbe na . chaile ata (close/oper) kora jabe
+tahole ata use korte pari
+
+<div id="box"></div>
+const shadow = shadowHost.attachShadow({mode: 'open'});
+shadow.innerHTML = `<style>p{color:red;}</style> <p>Hello shadow!</p>`
