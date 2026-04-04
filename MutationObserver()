@@ -1,0 +1,40 @@
+#amra jodi dekte chai amader element ar kono change hole ki chnage hole ta observe korte chai tobe (MutationObserver()) ata use korte pari
+
+
+<dib id="watchMe">Hello</dib>
+<button onclick="changeDom()">Change Dom</button>
+
+const watchMe = document.getElementById("watchMe");
+const observer = new MutationObserver((mutationList, observer) =>{
+console.dir(mutationList);
+   for(const mutation of mutationList){
+    console.log(`Type of Mutation: ${mutation.type}`);
+
+    if(mutation.type === "childList"){
+        console.log("A childnode added or remove");
+    }
+
+    if(mutation.type === "attributes"){
+        console.log(`Attribute ${mutation.attributeName} was changed`);
+    }
+
+    if(mutation.type === "characterData"){
+        console.log(`Text content changed to : ${mutation.target.data}`);
+    }
+
+   }
+});
+
+const config = {
+    attributes: true,
+     childList: true, 
+     subtree: true,
+     characterData: true,
+}
+
+observer.observe(watchMe, config);
+
+function changeDom(){
+    watchMe.textContent = "Goodbye!";
+    watchMe.setAttribute ("data-status", "Changed");
+}
