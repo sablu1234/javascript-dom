@@ -1,0 +1,3 @@
+#amra jodi dekte chai kono element ar jono jd dom a te ki ki data or attrute deka jai ata dekhar jonno use koro
+<dib id="watchMe">Hello</dib>
+console.dir(divEelem)
